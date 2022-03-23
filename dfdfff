@@ -1,0 +1,831 @@
+[33mcommit 4052efc1676bf90bb7ad56fdcdda6c009d86ddca[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: rabindrasahh <rabindrasah1997.1@gmail.com>
+Date:   Thu Feb 17 10:18:45 2022 +0530
+
+    first commit
+
+ .env                                               |     1 [32m+[m
+ .env.production                                    |     1 [32m+[m
+ .gitignore                                         |    23 [32m+[m
+ DZicace (1)/DZicace/business.html                  |   224 [32m+[m
+ DZicace (1)/DZicace/css/bootstrap.css              | 10224 [32m+++++++[m
+ DZicace (1)/DZicace/css/font-awesome.min.css       |     4 [32m+[m
+ DZicace (1)/DZicace/css/owl.carousel.min.css       |     6 [32m+[m
+ DZicace (1)/DZicace/css/owl.theme.default.min.css  |     6 [32m+[m
+ DZicace (1)/DZicace/css/style.css                  |  1003 [32m+[m
+ DZicace (1)/DZicace/fonts/Allison-Regular.ttf      |   Bin [31m0[m -> [32m142504[m bytes
+ DZicace (1)/DZicace/fonts/FontAwesome.otf          |   Bin [31m0[m -> [32m93888[m bytes
+ DZicace (1)/DZicace/fonts/fontawesome-webfont.eot  |   Bin [31m0[m -> [32m60767[m bytes
+ DZicace (1)/DZicace/fonts/fontawesome-webfont.svg  |   565 [32m+[m
+ DZicace (1)/DZicace/fonts/fontawesome-webfont.ttf  |   Bin [31m0[m -> [32m122092[m bytes
+ DZicace (1)/DZicace/fonts/fontawesome-webfont.woff |   Bin [31m0[m -> [32m71508[m bytes
+ .../DZicace/fonts/fontawesome-webfont.woff2        |   Bin [31m0[m -> [32m56780[m bytes
+ .../DZicace/fonts/glyphicons-halflings-regular.eot |   Bin [31m0[m -> [32m20127[m bytes
+ .../DZicace/fonts/glyphicons-halflings-regular.svg |   288 [32m+[m
+ .../DZicace/fonts/glyphicons-halflings-regular.ttf |   Bin [31m0[m -> [32m45404[m bytes
+ .../fonts/glyphicons-halflings-regular.woff        |   Bin [31m0[m -> [32m23424[m bytes
+ .../fonts/glyphicons-halflings-regular.woff2       |   Bin [31m0[m -> [32m18028[m bytes
+ DZicace (1)/DZicace/images/Ellipse 12.png          |   Bin [31m0[m -> [32m1042932[m bytes
+ DZicace (1)/DZicace/images/Mask Group.png          |   Bin [31m0[m -> [32m407653[m bytes
+ DZicace (1)/DZicace/images/Rectangle 31.png        |   Bin [31m0[m -> [32m8695[m bytes
+ DZicace (1)/DZicace/images/article.png             |   Bin [31m0[m -> [32m229791[m bytes
+ DZicace (1)/DZicace/images/banner-img.png          |   Bin [31m0[m -> [32m542623[m bytes
+ DZicace (1)/DZicace/images/bg.png                  |   Bin [31m0[m -> [32m1129689[m bytes
+ DZicace (1)/DZicace/images/blog.png                |   Bin [31m0[m -> [32m569297[m bytes
+ ...es-standing-near-bicycle-removebg-preview 1.png |   Bin [31m0[m -> [32m336542[m bytes
+ DZicace (1)/DZicace/images/fb.png                  |   Bin [31m0[m -> [32m1287[m bytes
+ DZicace (1)/DZicace/images/ft.png                  |   Bin [31m0[m -> [32m194111[m bytes
+ DZicace (1)/DZicace/images/google.png              |   Bin [31m0[m -> [32m1061[m bytes
+ DZicace (1)/DZicace/images/hiw.png                 |   Bin [31m0[m -> [32m20175[m bytes
+ DZicace (1)/DZicace/images/logo.png                |   Bin [31m0[m -> [32m5646[m bytes
+ DZicace (1)/DZicace/images/no-result.png           |   Bin [31m0[m -> [32m2519[m bytes
+ DZicace (1)/DZicace/images/profile-img.png         |   Bin [31m0[m -> [32m4442[m bytes
+ DZicace (1)/DZicace/images/profile.png             |   Bin [31m0[m -> [32m282681[m bytes
+ DZicace (1)/DZicace/images/talentbg.png            |   Bin [31m0[m -> [32m936851[m bytes
+ DZicace (1)/DZicace/images/w_logo.png              |   Bin [31m0[m -> [32m1454[m bytes
+ DZicace (1)/DZicace/index.html                     |   462 [32m+[m
+ DZicace (1)/DZicace/js/bootstrap.js                |  4521 [32m+++[m
+ DZicace (1)/DZicace/js/custom.js                   |    25 [32m+[m
+ DZicace (1)/DZicace/js/jquery-3.4.1.slim.min.js    |     2 [32m+[m
+ DZicace (1)/DZicace/js/jquery.min.js               |     4 [32m+[m
+ DZicace (1)/DZicace/js/owl.carousel.js             |  3448 [32m+++[m
+ DZicace (1)/DZicace/js/popper.min.js               |     5 [32m+[m
+ DZicace (1)/DZicace/login.html                     |   211 [32m+[m
+ DZicace (1)/DZicace/personal.html                  |   245 [32m+[m
+ DZicace (1)/DZicace/privacy-policy.html            |   203 [32m+[m
+ DZicace (1)/DZicace/sideslider.html                |   752 [32m+[m
+ DZicace (1)/DZicace/signup.html                    |   217 [32m+[m
+ DZicace (1)/DZicace/talent-profile.html            |   429 [32m+[m
+ DZicace (1)/DZicace/talent.html                    |   283 [32m+[m
+ DZicace (1)/DZicace/terms-and-condition.html       |   203 [32m+[m
+ README.md                                          |    24 [32m+[m
+ babel.config.js                                    |     5 [32m+[m
+ package-lock.json                                  | 28748 [32m+++++++++++++++++++[m
+ package.json                                       |    71 [32m+[m
+ public/_redirects                                  |     1 [32m+[m
+ public/favicon.ico                                 |   Bin [31m0[m -> [32m4286[m bytes
+ public/index.html                                  |    33 [32m+[m
+ src/App.vue                                        |   116 [32m+[m
+ src/assets/css/all.css                             |  1006 [32m+[m
+ src/assets/css/font-awesome.min.css                | 22460 [32m+++++++++++++++[m
+ src/assets/css/nucleo-icons.css                    |   597 [32m+[m
+ src/assets/css/nucleo-svg.css                      |   135 [32m+[m
+ src/assets/css/soft-ui-dashboard.css               | 25132 [32m++++++++++++++++[m
+ src/assets/css/soft-ui-dashboard.min.css           | 19750 [32m+++++++++++++[m
+ src/assets/css/soft-ui-pro.css                     | 25823 [32m+++++++++++++++++[m
+ src/assets/fontawesome/fa-brands-400.ttf           |   Bin [31m0[m -> [32m173980[m bytes
+ src/assets/fontawesome/fa-brands-400.woff          |   Bin [31m0[m -> [32m104496[m bytes
+ src/assets/fontawesome/fa-brands-400.woff2         |   Bin [31m0[m -> [32m104804[m bytes
+ src/assets/fontawesome/fa-duotone-900.ttf          |   Bin [31m0[m -> [32m890636[m bytes
+ src/assets/fontawesome/fa-duotone-900.woff         |   Bin [31m0[m -> [32m375628[m bytes
+ src/assets/fontawesome/fa-duotone-900.woff2        |   Bin [31m0[m -> [32m353788[m bytes
+ src/assets/fontawesome/fa-light-300.ttf            |   Bin [31m0[m -> [32m834624[m bytes
+ src/assets/fontawesome/fa-light-300.woff           |   Bin [31m0[m -> [32m356840[m bytes
+ src/assets/fontawesome/fa-light-300.woff2          |   Bin [31m0[m -> [32m340136[m bytes
+ src/assets/fontawesome/fa-regular-400.ttf          |   Bin [31m0[m -> [32m741508[m bytes
+ src/assets/fontawesome/fa-regular-400.woff         |   Bin [31m0[m -> [32m329884[m bytes
+ src/assets/fontawesome/fa-regular-400.woff2        |   Bin [31m0[m -> [32m315700[m bytes
+ src/assets/fontawesome/fa-solid-900.ttf            |   Bin [31m0[m -> [32m648356[m bytes
+ src/assets/fontawesome/fa-solid-900.woff           |   Bin [31m0[m -> [32m279576[m bytes
+ src/assets/fontawesome/fa-solid-900.woff2          |   Bin [31m0[m -> [32m270360[m bytes
+ src/assets/fontawesome/fa-thin-100.ttf             |   Bin [31m0[m -> [32m923132[m bytes
+ src/assets/fontawesome/fa-thin-100.woff            |   Bin [31m0[m -> [32m393940[m bytes
+ src/assets/fontawesome/fa-thin-100.woff2           |   Bin [31m0[m -> [32m372948[m bytes
+ src/assets/fonts/eot/IRANSansWeb.eot               |   Bin [31m0[m -> [32m63792[m bytes
+ src/assets/fonts/eot/IRANSansWeb_Black.eot         |   Bin [31m0[m -> [32m59476[m bytes
+ src/assets/fonts/eot/IRANSansWeb_Bold.eot          |   Bin [31m0[m -> [32m61136[m bytes
+ src/assets/fonts/eot/IRANSansWeb_Light.eot         |   Bin [31m0[m -> [32m57332[m bytes
+ src/assets/fonts/eot/IRANSansWeb_Medium.eot        |   Bin [31m0[m -> [32m52548[m bytes
+ src/assets/fonts/eot/IRANSansWeb_UltraLight.eot    |   Bin [31m0[m -> [32m62992[m bytes
+ src/assets/fonts/ttf/IRANSansWeb.ttf               |   Bin [31m0[m -> [32m63512[m bytes
+ src/assets/fonts/ttf/IRANSansWeb_Black.ttf         |   Bin [31m0[m -> [32m59172[m bytes
+ src/assets/fonts/ttf/IRANSansWeb_Bold.ttf          |   Bin [31m0[m -> [32m60856[m bytes
+ src/assets/fonts/ttf/IRANSansWeb_Light.ttf         |   Bin [31m0[m -> [32m57028[m bytes
+ src/assets/fonts/ttf/IRANSansWeb_Medium.ttf        |   Bin [31m0[m -> [32m52240[m bytes
+ src/assets/fonts/ttf/IRANSansWeb_UltraLight.ttf    |   Bin [31m0[m -> [32m62668[m bytes
+ src/assets/fonts/woff/IRANSansWeb.woff             |   Bin [31m0[m -> [32m39641[m bytes
+ src/assets/fonts/woff/IRANSansWeb_Black.woff       |   Bin [31m0[m -> [32m36641[m bytes
+ src/assets/fonts/woff/IRANSansWeb_Bold.woff        |   Bin [31m0[m -> [32m37877[m bytes
+ src/assets/fonts/woff/IRANSansWeb_Light.woff       |   Bin [31m0[m -> [32m37065[m bytes
+ src/assets/fonts/woff/IRANSansWeb_Medium.woff      |   Bin [31m0[m -> [32m33789[m bytes
+ src/assets/fonts/woff/IRANSansWeb_UltraLight.woff  |   Bin [31m0[m -> [32m39529[m bytes
+ src/assets/fonts/woff2/IRANSansWeb.woff2           |   Bin [31m0[m -> [32m31564[m bytes
+ src/assets/fonts/woff2/IRANSansWeb_Black.woff2     |   Bin [31m0[m -> [32m28424[m bytes
+ src/assets/fonts/woff2/IRANSansWeb_Bold.woff2      |   Bin [31m0[m -> [32m29692[m bytes
+ src/assets/fonts/woff2/IRANSansWeb_Light.woff2     |   Bin [31m0[m -> [32m29556[m bytes
+ src/assets/fonts/woff2/IRANSansWeb_Medium.woff2    |   Bin [31m0[m -> [32m27008[m bytes
+ .../fonts/woff2/IRANSansWeb_UltraLight.woff2       |   Bin [31m0[m -> [32m31292[m bytes
+ src/assets/img/Calculator.svg                      |     1 [32m+[m
+ src/assets/img/alesia.jpg                          |   Bin [31m0[m -> [32m148552[m bytes
+ src/assets/img/anastasia.jpg                       |   Bin [31m0[m -> [32m204601[m bytes
+ src/assets/img/annie-spratt.jpg                    |   Bin [31m0[m -> [32m331285[m bytes
+ src/assets/img/apple-icon.png                      |   Bin [31m0[m -> [32m2446[m bytes
+ src/assets/img/automotive/amg-gt.png               |   Bin [31m0[m -> [32m688106[m bytes
+ src/assets/img/automotive/cls.png                  |   Bin [31m0[m -> [32m126906[m bytes
+ src/assets/img/automotive/g-amg.png                |   Bin [31m0[m -> [32m171242[m bytes
+ src/assets/img/automotive/g-grey.jpg               |   Bin [31m0[m -> [32m43391[m bytes
+ src/assets/img/automotive/glc.png                  |   Bin [31m0[m -> [32m82392[m bytes
+ src/assets/img/automotive/s-maybach.png            |   Bin [31m0[m -> [32m110000[m bytes
+ src/assets/img/baazar.jpg                          |   Bin [31m0[m -> [32m4003[m bytes
+ src/assets/img/blog7-1.jpg                         |   Bin [31m0[m -> [32m131362[m bytes
+ src/assets/img/blog7-2.jpg                         |   Bin [31m0[m -> [32m82757[m bytes
+ src/assets/img/blog7-3.jpg                         |   Bin [31m0[m -> [32m103393[m bytes
+ src/assets/img/brooke.jpg                          |   Bin [31m0[m -> [32m181138[m bytes
+ src/assets/img/bruce-mars.jpg                      |   Bin [31m0[m -> [32m20236[m bytes
+ src/assets/img/celebrities.jpg                     |   Bin [31m0[m -> [32m90065[m bytes
+ src/assets/img/charles.jpg                         |   Bin [31m0[m -> [32m50543[m bytes
+ src/assets/img/curved-images/curved-10.jpg         |   Bin [31m0[m -> [32m134275[m bytes
+ src/assets/img/curved-images/curved-11.jpg         |   Bin [31m0[m -> [32m177181[m bytes
+ src/assets/img/curved-images/curved-6.jpg          |   Bin [31m0[m -> [32m185597[m bytes
+ src/assets/img/curved-images/curved-8.jpg          |   Bin [31m0[m -> [32m108926[m bytes
+ src/assets/img/curved-images/curved0.jpg           |   Bin [31m0[m -> [32m362523[m bytes
+ src/assets/img/curved-images/curved1.jpg           |   Bin [31m0[m -> [32m136181[m bytes
+ src/assets/img/curved-images/curved10.jpg          |   Bin [31m0[m -> [32m5872495[m bytes
+ src/assets/img/curved-images/curved11-small.jpg    |   Bin [31m0[m -> [32m578900[m bytes
+ src/assets/img/curved-images/curved11.jpg          |   Bin [31m0[m -> [32m1072844[m bytes
+ src/assets/img/curved-images/curved13.jpg          |   Bin [31m0[m -> [32m541159[m bytes
+ src/assets/img/curved-images/curved14.jpg          |   Bin [31m0[m -> [32m239289[m bytes
+ src/assets/img/curved-images/curved19.jpg          |   Bin [31m0[m -> [32m1694566[m bytes
+ src/assets/img/curved-images/curved5-small.jpg     |   Bin [31m0[m -> [32m5043970[m bytes
+ src/assets/img/curved-images/curved5.jpg           |   Bin [31m0[m -> [32m565251[m bytes
+ src/assets/img/curved-images/curved6-small.jpg     |   Bin [31m0[m -> [32m1077530[m bytes
+ src/assets/img/curved-images/curved6.jpg           |   Bin [31m0[m -> [32m412607[m bytes
+ src/assets/img/curved-images/curved8.jpg           |   Bin [31m0[m -> [32m262249[m bytes
+ src/assets/img/curved-images/curved9.jpg           |   Bin [31m0[m -> [32m444456[m bytes
+ src/assets/img/curved-images/white-curved.jpeg     |   Bin [31m0[m -> [32m55537[m bytes
+ src/assets/img/down-arrow-dark.svg                 |    11 [32m+[m
+ src/assets/img/down-arrow-white.svg                |     1 [32m+[m
+ src/assets/img/down-arrow.svg                      |    11 [32m+[m
+ src/assets/img/enamad.png                          |   Bin [31m0[m -> [32m86198[m bytes
+ src/assets/img/favicon.png                         |   Bin [31m0[m -> [32m2761[m bytes
+ src/assets/img/fb_cover.png                        |   Bin [31m0[m -> [32m362418[m bytes
+ src/assets/img/hiw.png                             |   Bin [31m0[m -> [32m20175[m bytes
+ src/assets/img/home-decor-1.jpg                    |   Bin [31m0[m -> [32m937206[m bytes
+ src/assets/img/home-decor-2.jpg                    |   Bin [31m0[m -> [32m1088035[m bytes
+ src/assets/img/home-decor-3.jpg                    |   Bin [31m0[m -> [32m1159457[m bytes
+ src/assets/img/illustrations/card-1.png            |   Bin [31m0[m -> [32m5035[m bytes
+ src/assets/img/illustrations/card-2.png            |   Bin [31m0[m -> [32m4979[m bytes
+ src/assets/img/illustrations/chat.png              |   Bin [31m0[m -> [32m39793[m bytes
+ src/assets/img/illustrations/error-404.png         |   Bin [31m0[m -> [32m147784[m bytes
+ src/assets/img/illustrations/error-500.png         |   Bin [31m0[m -> [32m35420[m bytes
+ src/assets/img/illustrations/iphone-1.png          |   Bin [31m0[m -> [32m34499[m bytes
+ src/assets/img/illustrations/iphone-2.png          |   Bin [31m0[m -> [32m34857[m bytes
+ src/assets/img/illustrations/iphone-3.png          |   Bin [31m0[m -> [32m33314[m bytes
+ src/assets/img/illustrations/iphone-4.png          |   Bin [31m0[m -> [32m35517[m bytes
+ src/assets/img/illustrations/lock.png              |   Bin [31m0[m -> [32m36200[m bytes
+ src/assets/img/illustrations/man-cloud.png         |   Bin [31m0[m -> [32m101606[m bytes
+ src/assets/img/illustrations/man-rocket.png        |   Bin [31m0[m -> [32m86786[m bytes
+ src/assets/img/illustrations/rocket-white.png      |   Bin [31m0[m -> [32m65096[m bytes
+ src/assets/img/illustrations/sign-up.png           |   Bin [31m0[m -> [32m35021[m bytes
+ src/assets/img/influencer.png                      |   Bin [31m0[m -> [32m8307[m bytes
+ src/assets/img/ivana-square.jpg                    |   Bin [31m0[m -> [32m27522[m bytes
+ src/assets/img/ivana-squares.jpg                   |   Bin [31m0[m -> [32m46213[m bytes
+ src/assets/img/ivana.jpg                           |   Bin [31m0[m -> [32m54081[m bytes
+ src/assets/img/ivancik.jpg                         |   Bin [31m0[m -> [32m64607[m bytes
+ src/assets/img/job-seeker.png                      |   Bin [31m0[m -> [32m1548[m bytes
+ src/assets/img/jordan.jpg                          |   Bin [31m0[m -> [32m34886[m bytes
+ src/assets/img/kal-visuals-square.jpg              |   Bin [31m0[m -> [32m40050[m bytes
+ src/assets/img/kal-visuals.jpg                     |   Bin [31m0[m -> [32m83952[m bytes
+ src/assets/img/logo-ct.png                         |   Bin [31m0[m -> [32m6956[m bytes
+ src/assets/img/logo.png                            |   Bin [31m0[m -> [32m13117[m bytes
+ src/assets/img/logo_white.svg                      |     1 [32m+[m
+ src/assets/img/logos/Dark green.png                |   Bin [31m0[m -> [32m12172[m bytes
+ src/assets/img/logos/Gradient green.png            |   Bin [31m0[m -> [32m21001[m bytes
+ src/assets/img/logos/Green.png                     |   Bin [31m0[m -> [32m12208[m bytes
+ src/assets/img/logos/app-store-button.svg          |    17 [32m+[m
+ src/assets/img/logos/appstore.png                  |   Bin [31m0[m -> [32m3534[m bytes
+ src/assets/img/logos/banner-img.png                |   Bin [31m0[m -> [32m542623[m bytes
+ src/assets/img/logos/bg.png                        |   Bin [31m0[m -> [32m1129689[m bytes
+ src/assets/img/logos/black.png                     |   Bin [31m0[m -> [32m9119[m bytes
+ src/assets/img/logos/google-play-button.svg        |    46 [32m+[m
+ src/assets/img/logos/google-play.png               |   Bin [31m0[m -> [32m5553[m bytes
+ src/assets/img/logos/gray-logos/logo-apple.svg     |    10 [32m+[m
+ src/assets/img/logos/gray-logos/logo-behance.svg   |     9 [32m+[m
+ src/assets/img/logos/gray-logos/logo-coinbase.svg  |    16 [32m+[m
+ .../img/logos/gray-logos/logo-digitalocean.svg     |     9 [32m+[m
+ src/assets/img/logos/gray-logos/logo-facebook.svg  |    11 [32m+[m
+ src/assets/img/logos/gray-logos/logo-google.svg    |    14 [32m+[m
+ src/assets/img/logos/gray-logos/logo-mailchimp.svg |    11 [32m+[m
+ src/assets/img/logos/gray-logos/logo-nasa.svg      |     9 [32m+[m
+ src/assets/img/logos/gray-logos/logo-netflix.svg   |     9 [32m+[m
+ src/assets/img/logos/gray-logos/logo-pinterest.svg |     9 [32m+[m
+ src/assets/img/logos/gray-logos/logo-spotify.svg   |     9 [32m+[m
+ src/assets/img/logos/gray-logos/logo-vodafone.svg  |     9 [32m+[m
+ src/assets/img/logos/icon black.png                |   Bin [31m0[m -> [32m2956[m bytes
+ src/assets/img/logos/icon gradient green.png       |   Bin [31m0[m -> [32m7677[m bytes
+ src/assets/img/logos/icon green.png                |   Bin [31m0[m -> [32m2956[m bytes
+ src/assets/img/logos/icon white .png               |   Bin [31m0[m -> [32m2953[m bytes
+ src/assets/img/logos/icon-dark-green.png           |   Bin [31m0[m -> [32m2956[m bytes
+ src/assets/img/logos/images/Ellipse 12.png         |   Bin [31m0[m -> [32m1042932[m bytes
+ src/assets/img/logos/images/Mask Group.png         |   Bin [31m0[m -> [32m407653[m bytes
+ src/assets/img/logos/images/Rectangle 31.png       |   Bin [31m0[m -> [32m8695[m bytes
+ src/assets/img/logos/images/article.png            |   Bin [31m0[m -> [32m229791[m bytes
+ src/assets/img/logos/images/banner-img.png         |   Bin [31m0[m -> [32m542623[m bytes
+ src/assets/img/logos/images/bg.png                 |   Bin [31m0[m -> [32m1129689[m bytes
+ src/assets/img/logos/images/blog.png               |   Bin [31m0[m -> [32m569297[m bytes
+ ...es-standing-near-bicycle-removebg-preview 1.png |   Bin [31m0[m -> [32m336542[m bytes
+ src/assets/img/logos/images/fb.png                 |   Bin [31m0[m -> [32m1287[m bytes
+ src/assets/img/logos/images/ft.png                 |   Bin [31m0[m -> [32m194111[m bytes
+ src/assets/img/logos/images/google.png             |   Bin [31m0[m -> [32m1061[m bytes
+ src/assets/img/logos/images/logo.png               |   Bin [31m0[m -> [32m5646[m bytes
+ src/assets/img/logos/images/talentbg.png           |   Bin [31m0[m -> [32m936851[m bytes
+ src/assets/img/logos/images/w_logo.png             |   Bin [31m0[m -> [32m1454[m bytes
+ src/assets/img/logos/mastercard.png                |   Bin [31m0[m -> [32m41970[m bytes
+ src/assets/img/logos/medium-logos/logo-apple.svg   |    10 [32m+[m
+ src/assets/img/logos/medium-logos/logo-behance.svg |     9 [32m+[m
+ .../img/logos/medium-logos/logo-coinbase.svg       |    16 [32m+[m
+ .../img/logos/medium-logos/logo-facebook.svg       |    12 [32m+[m
+ src/assets/img/logos/medium-logos/logo-google.svg  |    14 [32m+[m
+ .../img/logos/medium-logos/logo-mailchimp.svg      |    11 [32m+[m
+ src/assets/img/logos/medium-logos/logo-nasa.svg    |     9 [32m+[m
+ src/assets/img/logos/medium-logos/logo-netflix.svg |     9 [32m+[m
+ .../img/logos/medium-logos/logo-pinterest.svg      |     9 [32m+[m
+ src/assets/img/logos/medium-logos/logo-spotify.svg |     9 [32m+[m
+ .../img/logos/medium-logos/logo-vodafone.svg       |     9 [32m+[m
+ src/assets/img/logos/small-logos/logo-apple.svg    |     9 [32m+[m
+ src/assets/img/logos/small-logos/logo-asana.svg    |    16 [32m+[m
+ .../img/logos/small-logos/logo-atlassian.svg       |    16 [32m+[m
+ .../img/logos/small-logos/logo-google-drive.svg    |    29 [32m+[m
+ src/assets/img/logos/small-logos/logo-invision.svg |    10 [32m+[m
+ src/assets/img/logos/small-logos/logo-jira.svg     |    21 [32m+[m
+ src/assets/img/logos/small-logos/logo-shopify.svg  |    11 [32m+[m
+ src/assets/img/logos/small-logos/logo-slack.svg    |    12 [32m+[m
+ src/assets/img/logos/small-logos/logo-spotify.svg  |     9 [32m+[m
+ src/assets/img/logos/small-logos/logo-weave.svg    |    12 [32m+[m
+ src/assets/img/logos/small-logos/logo-webdev.svg   |    11 [32m+[m
+ src/assets/img/logos/small-logos/logo-xd.svg       |    11 [32m+[m
+ src/assets/img/logos/visa.png                      |   Bin [31m0[m -> [32m46206[m bytes
+ .../img/logos/white-logos/logo-google-white.svg    |    14 [32m+[m
+ .../img/logos/white-logos/logo-spotify-white.svg   |     9 [32m+[m
+ src/assets/img/logos/white.png                     |   Bin [31m0[m -> [32m8044[m bytes
+ src/assets/img/macbook.png                         |   Bin [31m0[m -> [32m290598[m bytes
+ src/assets/img/marie.jpg                           |   Bin [31m0[m -> [32m207059[m bytes
+ src/assets/img/meeting.jpg                         |   Bin [31m0[m -> [32m430291[m bytes
+ src/assets/img/mimi-thian.jpg                      |   Bin [31m0[m -> [32m720003[m bytes
+ src/assets/img/nastuh.jpg                          |   Bin [31m0[m -> [32m186249[m bytes
+ src/assets/img/office-1.jpg                        |   Bin [31m0[m -> [32m58482[m bytes
+ src/assets/img/office-2.jpg                        |   Bin [31m0[m -> [32m42632[m bytes
+ src/assets/img/office-dark.jpg                     |   Bin [31m0[m -> [32m78202[m bytes
+ src/assets/img/office.jpg                          |   Bin [31m0[m -> [32m538789[m bytes
+ src/assets/img/pattern-points.png                  |   Bin [31m0[m -> [32m1610[m bytes
+ src/assets/img/phones.png                          |   Bin [31m0[m -> [32m501943[m bytes
+ src/assets/img/profile-img.png                     |   Bin [31m0[m -> [32m4442[m bytes
+ src/assets/img/saamaan-kish.png                    |   Bin [31m0[m -> [32m28220[m bytes
+ src/assets/img/screen-man.png                      |   Bin [31m0[m -> [32m60571[m bytes
+ src/assets/img/shapes/pattern-lines.svg            |    91 [32m+[m
+ src/assets/img/shapes/shape-1.svg                  |     1 [32m+[m
+ src/assets/img/shapes/shape-2.svg                  |     1 [32m+[m
+ src/assets/img/shapes/shape-3.svg                  |     1 [32m+[m
+ src/assets/img/shapes/waves-gray.svg               |    41 [32m+[m
+ src/assets/img/shapes/waves-white.svg              |    48 [32m+[m
+ src/assets/img/small-logos/icon-sun-cloud.png      |   Bin [31m0[m -> [32m96900[m bytes
+ src/assets/img/small-logos/logo-atlassian.svg      |    16 [32m+[m
+ src/assets/img/small-logos/logo-invision.svg       |    10 [32m+[m
+ src/assets/img/small-logos/logo-jira.svg           |    21 [32m+[m
+ src/assets/img/small-logos/logo-slack.svg          |    12 [32m+[m
+ src/assets/img/small-logos/logo-spotify.svg        |     9 [32m+[m
+ src/assets/img/small-logos/logo-webdev.svg         |    11 [32m+[m
+ src/assets/img/small-logos/logo-xd.svg             |    11 [32m+[m
+ src/assets/img/talent.svg                          |     1 [32m+[m
+ src/assets/img/team-1.jpg                          |   Bin [31m0[m -> [32m40080[m bytes
+ src/assets/img/team-2.jpg                          |   Bin [31m0[m -> [32m16940[m bytes
+ src/assets/img/team-3.jpg                          |   Bin [31m0[m -> [32m32372[m bytes
+ src/assets/img/team-4.jpg                          |   Bin [31m0[m -> [32m22858[m bytes
+ src/assets/img/toa-heftiba.jpg                     |   Bin [31m0[m -> [32m131968[m bytes
+ src/assets/img/tv.jpg                              |   Bin [31m0[m -> [32m13441[m bytes
+ src/assets/img/user-placeholder.png                |   Bin [31m0[m -> [32m2011[m bytes
+ src/assets/img/vezarat.png                         |   Bin [31m0[m -> [32m65359[m bytes
+ src/assets/img/wave-1.svg                          |     9 [32m+[m
+ src/assets/img/white2.png                          |   Bin [31m0[m -> [32m1454[m bytes
+ src/assets/js/core/bootstrap.min.js                |     6 [32m+[m
+ src/assets/js/core/popper.min.js                   |     5 [32m+[m
+ src/assets/js/plugins/Chart.extension.js           |   130 [32m+[m
+ src/assets/js/plugins/bootstrap-notify.js          |   432 [32m+[m
+ src/assets/js/plugins/chartjs.min.js               |    13 [32m+[m
+ src/assets/js/plugins/choices.min.js               |    11 [32m+[m
+ src/assets/js/plugins/fullcalendar.min.js          |     6 [32m+[m
+ src/assets/js/plugins/perfect-scrollbar.min.js     |    19 [32m+[m
+ src/assets/js/plugins/smooth-scrollbar.min.js      |    25 [32m+[m
+ src/assets/js/soft-ui-dashboard.js                 |   245 [32m+[m
+ src/assets/js/soft-ui-dashboard.js.map             |     1 [32m+[m
+ src/assets/js/soft-ui-dashboard.min.js             |     2 [32m+[m
+ src/assets/scss/_variables.scss                    |    11 [32m+[m
+ src/assets/style/css/bootstrap.css                 | 10224 [32m+++++++[m
+ src/assets/style/css/font-awesome.min.css          |     4 [32m+[m
+ src/assets/style/css/fonts/Allison-Regular.ttf     |   Bin [31m0[m -> [32m142504[m bytes
+ src/assets/style/css/fonts/FontAwesome.otf         |   Bin [31m0[m -> [32m93888[m bytes
+ src/assets/style/css/fonts/fontawesome-webfont.eot |   Bin [31m0[m -> [32m60767[m bytes
+ src/assets/style/css/fonts/fontawesome-webfont.svg |   565 [32m+[m
+ src/assets/style/css/fonts/fontawesome-webfont.ttf |   Bin [31m0[m -> [32m122092[m bytes
+ .../style/css/fonts/fontawesome-webfont.woff       |   Bin [31m0[m -> [32m71508[m bytes
+ .../style/css/fonts/fontawesome-webfont.woff2      |   Bin [31m0[m -> [32m56780[m bytes
+ .../css/fonts/glyphicons-halflings-regular.eot     |   Bin [31m0[m -> [32m20127[m bytes
+ .../css/fonts/glyphicons-halflings-regular.svg     |   288 [32m+[m
+ .../css/fonts/glyphicons-halflings-regular.ttf     |   Bin [31m0[m -> [32m45404[m bytes
+ .../css/fonts/glyphicons-halflings-regular.woff    |   Bin [31m0[m -> [32m23424[m bytes
+ .../css/fonts/glyphicons-halflings-regular.woff2   |   Bin [31m0[m -> [32m18028[m bytes
+ src/assets/style/css/owl.carousel.min.css          |     6 [32m+[m
+ src/assets/style/css/owl.theme.default.min.css     |     6 [32m+[m
+ src/assets/style/css/style.css                     |  1010 [32m+[m
+ src/components/UI/DeleteModal.vue                  |    77 [32m+[m
+ src/components/UI/ThePagination.vue                |   135 [32m+[m
+ src/components/crausel/Carousel.vue                |   101 [32m+[m
+ src/components/crausel/CarouselSlide.vue           |    75 [32m+[m
+ src/components/layouts/ArticleCard.vue             |    98 [32m+[m
+ src/components/layouts/CelebrityCard.vue           |    68 [32m+[m
+ src/components/layouts/IndexNavbar.vue             |   250 [32m+[m
+ src/components/layouts/TheFooter.vue               |    91 [32m+[m
+ src/components/layouts/TheNavbar.vue               |   152 [32m+[m
+ src/components/layouts/ThePayment.vue              |    21 [32m+[m
+ src/main.js                                        |    67 [32m+[m
+ src/routes/adminRouter.js                          |    97 [32m+[m
+ src/routes/local.js                                |   420 [32m+[m
+ src/routes/router.js                               |   195 [32m+[m
+ src/routes/talentRouter.js                         |    65 [32m+[m
+ src/routes/userRouter.js                           |    37 [32m+[m
+ src/store/admin/actions.js                         |   486 [32m+[m
+ src/store/admin/getters.js                         |    26 [32m+[m
+ src/store/admin/index.js                           |    20 [32m+[m
+ src/store/admin/mutations.js                       |    26 [32m+[m
+ src/store/auth/actions.js                          |   138 [32m+[m
+ src/store/auth/getters.js                          |    15 [32m+[m
+ src/store/auth/index.js                            |    15 [32m+[m
+ src/store/auth/mutations.js                        |    11 [32m+[m
+ src/store/blog/actions.js                          |   141 [32m+[m
+ src/store/blog/getters.js                          |    11 [32m+[m
+ src/store/blog/index.js                            |    15 [32m+[m
+ src/store/blog/mutations.js                        |    11 [32m+[m
+ src/store/index.js                                 |    29 [32m+[m
+ src/store/site/actions.js                          |   300 [32m+[m
+ src/store/site/getters.js                          |    32 [32m+[m
+ src/store/site/index.js                            |    22 [32m+[m
+ src/store/site/mutations.js                        |    32 [32m+[m
+ src/store/talent/actions.js                        |   281 [32m+[m
+ src/store/talent/getters.js                        |    26 [32m+[m
+ src/store/talent/index.js                          |    20 [32m+[m
+ src/store/talent/mutations.js                      |    26 [32m+[m
+ src/store/transaction/actions.js                   |    85 [32m+[m
+ src/store/transaction/getters.js                   |    11 [32m+[m
+ src/store/transaction/index.js                     |    13 [32m+[m
+ src/store/transaction/mutations.js                 |     5 [32m+[m
+ src/views/NotFound.vue                             |    68 [32m+[m
+ src/views/admin/AcceptedTalents.vue                |   259 [32m+[m
+ src/views/admin/AddTalent.vue                      |   315 [32m+[m
+ src/views/admin/EditArticle.vue                    |   199 [32m+[m
+ src/views/admin/NewArticle.vue                     |   169 [32m+[m
+ src/views/admin/PanelSkeleton.vue                  |   305 [32m+[m
+ src/views/admin/PendingTalents.vue                 |   256 [32m+[m
+ src/views/admin/TalentInfo.vue                     |   534 [32m+[m
+ src/views/admin/TheArticles.vue                    |   152 [32m+[m
+ src/views/admin/TheCategories.vue                  |   303 [32m+[m
+ src/views/admin/TheRequests.vue                    |   470 [32m+[m
+ src/views/admin/TheSettings.vue                    |   288 [32m+[m
+ src/views/admin/TheTransactions.vue                |   218 [32m+[m
+ src/views/admin/TheUsers.vue                       |   329 [32m+[m
+ src/views/auth/ResetPassword.vue                   |   146 [32m+[m
+ src/views/auth/ResetPasswordRequest.vue            |   111 [32m+[m
+ src/views/auth/TheLogin.vue                        |   143 [32m+[m
+ src/views/auth/TheSignup.vue                       |   173 [32m+[m
+ src/views/site/AllCategories.vue                   |   652 [32m+[m
+ src/views/site/AllTalents.vue                      |   131 [32m+[m
+ src/views/site/BookMarketingVideo.vue              |   263 [32m+[m
+ src/views/site/BookNormalVideo.vue                 |   359 [32m+[m
+ src/views/site/TalentInfo.vue                      |  1346 [32m+[m
+ src/views/site/TalentsJoin.vue                     |   417 [32m+[m
+ src/views/site/TheArticle.vue                      |   135 [32m+[m
+ src/views/site/TheArticles.vue                     |    65 [32m+[m
+ src/views/site/TheBlog.vue                         |   139 [32m+[m
+ src/views/site/TheFAQ.vue                          |   208 [32m+[m
+ src/views/site/TheIndex.vue                        |   948 [32m+[m
+ src/views/site/ThePolicy.vue                       |   169 [32m+[m
+ src/views/site/TheTermAndCondition.vue             |   145 [32m+[m
+ src/views/site/cete.vue                            |    33 [32m+[m
+ src/views/site/enrole_dezicare.vue                 |  1204 [32m+[m
+ src/views/talent/CompletedRequests.vue             |   181 [32m+[m
+ src/views/talent/MyReviews.vue                     |    83 [32m+[m
+ src/views/talent/MyVideos.vue                      |   138 [32m+[m
+ src/views/talent/PanelSkeleton.vue                 |   376 [32m+[m
+ src/views/talent/PendingRequests.vue               |   290 [32m+[m
+ src/views/talent/RejectedRequests.vue              |   179 [32m+[m
+ src/views/talent/TheDashboard.vue                  |    86 [32m+[m
+ src/views/talent/TheProfile.vue                    |   423 [32m+[m
+ src/views/talent/TheTransactions.vue               |   312 [32m+[m
+ src/views/user/CompletedOrders.vue                 |   474 [32m+[m
+ src/views/user/PanelSkeleton.vue                   |   301 [32m+[m
+ src/views/user/PendingOrders.vue                   |   204 [32m+[m
+ src/views/user/TheBookmarks.vue                    |   115 [32m+[m
+ src/views/user/TheProfile.vue                      |   219 [32m+[m
+ vue.config.js                                      |     6 [32m+[m
+ 412 files changed, 178853 insertions(+)
+ create mode 100644 .env
+ create mode 100644 .env.production
+ create mode 100644 .gitignore
+ create mode 100644 DZicace (1)/DZicace/business.html
+ create mode 100644 DZicace (1)/DZicace/css/bootstrap.css
+ create mode 100644 DZicace (1)/DZicace/css/font-awesome.min.css
+ create mode 100644 DZicace (1)/DZicace/css/owl.carousel.min.css
+ create mode 100644 DZicace (1)/DZicace/css/owl.theme.default.min.css
+ create mode 100644 DZicace (1)/DZicace/css/style.css
+ create mode 100644 DZicace (1)/DZicace/fonts/Allison-Regular.ttf
+ create mode 100644 DZicace (1)/DZicace/fonts/FontAwesome.otf
+ create mode 100644 DZicace (1)/DZicace/fonts/fontawesome-webfont.eot
+ create mode 100644 DZicace (1)/DZicace/fonts/fontawesome-webfont.svg
+ create mode 100644 DZicace (1)/DZicace/fonts/fontawesome-webfont.ttf
+ create mode 100644 DZicace (1)/DZicace/fonts/fontawesome-webfont.woff
+ create mode 100644 DZicace (1)/DZicace/fonts/fontawesome-webfont.woff2
+ create mode 100644 DZicace (1)/DZicace/fonts/glyphicons-halflings-regular.eot
+ create mode 100644 DZicace (1)/DZicace/fonts/glyphicons-halflings-regular.svg
+ create mode 100644 DZicace (1)/DZicace/fonts/glyphicons-halflings-regular.ttf
+ create mode 100644 DZicace (1)/DZicace/fonts/glyphicons-halflings-regular.woff
+ create mode 100644 DZicace (1)/DZicace/fonts/glyphicons-halflings-regular.woff2
+ create mode 100644 DZicace (1)/DZicace/images/Ellipse 12.png
+ create mode 100644 DZicace (1)/DZicace/images/Mask Group.png
+ create mode 100644 DZicace (1)/DZicace/images/Rectangle 31.png
+ create mode 100644 DZicace (1)/DZicace/images/article.png
+ create mode 100644 DZicace (1)/DZicace/images/banner-img.png
+ create mode 100644 DZicace (1)/DZicace/images/bg.png
+ create mode 100644 DZicace (1)/DZicace/images/blog.png
+ create mode 100644 DZicace (1)/DZicace/images/dreamy-white-girl-using-phone-selfie-with-new-bike-winsome-curly-woman-sunglasses-standing-near-bicycle-removebg-preview 1.png
+ create mode 100644 DZicace (1)/DZicace/images/fb.png
+ create mode 100644 DZicace (1)/DZicace/images/ft.png
+ create mode 100644 DZicace (1)/DZicace/images/google.png
+ create mode 100644 DZicace (1)/DZicace/images/hiw.png
+ create mode 100644 DZicace (1)/DZicace/images/logo.png
+ create mode 100644 DZicace (1)/DZicace/images/no-result.png
+ create mode 100644 DZicace (1)/DZicace/images/profile-img.png
+ create mode 100644 DZicace (1)/DZicace/images/profile.png
+ create mode 100644 DZicace (1)/DZicace/images/talentbg.png
+ create mode 100644 DZicace (1)/DZicace/images/w_logo.png
+ create mode 100644 DZicace (1)/DZicace/index.html
+ create mode 100644 DZicace (1)/DZicace/js/bootstrap.js
+ create mode 100644 DZicace (1)/DZicace/js/custom.js
+ create mode 100644 DZicace (1)/DZicace/js/jquery-3.4.1.slim.min.js
+ create mode 100644 DZicace (1)/DZicace/js/jquery.min.js
+ create mode 100644 DZicace (1)/DZicace/js/owl.carousel.js
+ create mode 100644 DZicace (1)/DZicace/js/popper.min.js
+ create mode 100644 DZicace (1)/DZicace/login.html
+ create mode 100644 DZicace (1)/DZicace/personal.html
+ create mode 100644 DZicace (1)/DZicace/privacy-policy.html
+ create mode 100644 DZicace (1)/DZicace/sideslider.html
+ create mode 100644 DZicace (1)/DZicace/signup.html
+ create mode 100644 DZicace (1)/DZicace/talent-profile.html
+ create mode 100644 DZicace (1)/DZicace/talent.html
+ create mode 100644 DZicace (1)/DZicace/terms-and-condition.html
+ create mode 100644 README.md
+ create mode 100644 babel.config.js
+ create mode 100644 package-lock.json
+ create mode 100644 package.json
+ create mode 100644 public/_redirects
+ create mode 100644 public/favicon.ico
+ create mode 100644 public/index.html
+ create mode 100644 src/App.vue
+ create mode 100644 src/assets/css/all.css
+ create mode 100644 src/assets/css/font-awesome.min.css
+ create mode 100644 src/assets/css/nucleo-icons.css
+ create mode 100644 src/assets/css/nucleo-svg.css
+ create mode 100644 src/assets/css/soft-ui-dashboard.css
+ create mode 100644 src/assets/css/soft-ui-dashboard.min.css
+ create mode 100644 src/assets/css/soft-ui-pro.css
+ create mode 100644 src/assets/fontawesome/fa-brands-400.ttf
+ create mode 100644 src/assets/fontawesome/fa-brands-400.woff
+ create mode 100644 src/assets/fontawesome/fa-brands-400.woff2
+ create mode 100644 src/assets/fontawesome/fa-duotone-900.ttf
+ create mode 100644 src/assets/fontawesome/fa-duotone-900.woff
+ create mode 100644 src/assets/fontawesome/fa-duotone-900.woff2
+ create mode 100644 src/assets/fontawesome/fa-light-300.ttf
+ create mode 100644 src/assets/fontawesome/fa-light-300.woff
+ create mode 100644 src/assets/fontawesome/fa-light-300.woff2
+ create mode 100644 src/assets/fontawesome/fa-regular-400.ttf
+ create mode 100644 src/assets/fontawesome/fa-regular-400.woff
+ create mode 100644 src/assets/fontawesome/fa-regular-400.woff2
+ create mode 100644 src/assets/fontawesome/fa-solid-900.ttf
+ create mode 100644 src/assets/fontawesome/fa-solid-900.woff
+ create mode 100644 src/assets/fontawesome/fa-solid-900.woff2
+ create mode 100644 src/assets/fontawesome/fa-thin-100.ttf
+ create mode 100644 src/assets/fontawesome/fa-thin-100.woff
+ create mode 100644 src/assets/fontawesome/fa-thin-100.woff2
+ create mode 100644 src/assets/fonts/eot/IRANSansWeb.eot
+ create mode 100644 src/assets/fonts/eot/IRANSansWeb_Black.eot
+ create mode 100644 src/assets/fonts/eot/IRANSansWeb_Bold.eot
+ create mode 100644 src/assets/fonts/eot/IRANSansWeb_Light.eot
+ create mode 100644 src/assets/fonts/eot/IRANSansWeb_Medium.eot
+ create mode 100644 src/assets/fonts/eot/IRANSansWeb_UltraLight.eot
+ create mode 100644 src/assets/fonts/ttf/IRANSansWeb.ttf
+ create mode 100644 src/assets/fonts/ttf/IRANSansWeb_Black.ttf
+ create mode 100644 src/assets/fonts/ttf/IRANSansWeb_Bold.ttf
+ create mode 100644 src/assets/fonts/ttf/IRANSansWeb_Light.ttf
+ create mode 100644 src/assets/fonts/ttf/IRANSansWeb_Medium.ttf
+ create mode 100644 src/assets/fonts/ttf/IRANSansWeb_UltraLight.ttf
+ create mode 100644 src/assets/fonts/woff/IRANSansWeb.woff
+ create mode 100644 src/assets/fonts/woff/IRANSansWeb_Black.woff
+ create mode 100644 src/assets/fonts/woff/IRANSansWeb_Bold.woff
+ create mode 100644 src/assets/fonts/woff/IRANSansWeb_Light.woff
+ create mode 100644 src/assets/fonts/woff/IRANSansWeb_Medium.woff
+ create mode 100644 src/assets/fonts/woff/IRANSansWeb_UltraLight.woff
+ create mode 100644 src/assets/fonts/woff2/IRANSansWeb.woff2
+ create mode 100644 src/assets/fonts/woff2/IRANSansWeb_Black.woff2
+ create mode 100644 src/assets/fonts/woff2/IRANSansWeb_Bold.woff2
+ create mode 100644 src/assets/fonts/woff2/IRANSansWeb_Light.woff2
+ create mode 100644 src/assets/fonts/woff2/IRANSansWeb_Medium.woff2
+ create mode 100644 src/assets/fonts/woff2/IRANSansWeb_UltraLight.woff2
+ create mode 100644 src/assets/img/Calculator.svg
+ create mode 100644 src/assets/img/alesia.jpg
+ create mode 100644 src/assets/img/anastasia.jpg
+ create mode 100644 src/assets/img/annie-spratt.jpg
+ create mode 100644 src/assets/img/apple-icon.png
+ create mode 100644 src/assets/img/automotive/amg-gt.png
+ create mode 100644 src/assets/img/automotive/cls.png
+ create mode 100644 src/assets/img/automotive/g-amg.png
+ create mode 100644 src/assets/img/automotive/g-grey.jpg
+ create mode 100644 src/assets/img/automotive/glc.png
+ create mode 100644 src/assets/img/automotive/s-maybach.png
+ create mode 100644 src/assets/img/baazar.jpg
+ create mode 100644 src/assets/img/blog7-1.jpg
+ create mode 100644 src/assets/img/blog7-2.jpg
+ create mode 100644 src/assets/img/blog7-3.jpg
+ create mode 100644 src/assets/img/brooke.jpg
+ create mode 100644 src/assets/img/bruce-mars.jpg
+ create mode 100644 src/assets/img/celebrities.jpg
+ create mode 100644 src/assets/img/charles.jpg
+ create mode 100644 src/assets/img/curved-images/curved-10.jpg
+ create mode 100644 src/assets/img/curved-images/curved-11.jpg
+ create mode 100644 src/assets/img/curved-images/curved-6.jpg
+ create mode 100644 src/assets/img/curved-images/curved-8.jpg
+ create mode 100644 src/assets/img/curved-images/curved0.jpg
+ create mode 100644 src/assets/img/curved-images/curved1.jpg
+ create mode 100644 src/assets/img/curved-images/curved10.jpg
+ create mode 100644 src/assets/img/curved-images/curved11-small.jpg
+ create mode 100644 src/assets/img/curved-images/curved11.jpg
+ create mode 100644 src/assets/img/curved-images/curved13.jpg
+ create mode 100644 src/assets/img/curved-images/curved14.jpg
+ create mode 100644 src/assets/img/curved-images/curved19.jpg
+ create mode 100644 src/assets/img/curved-images/curved5-small.jpg
+ create mode 100644 src/assets/img/curved-images/curved5.jpg
+ create mode 100644 src/assets/img/curved-images/curved6-small.jpg
+ create mode 100644 src/assets/img/curved-images/curved6.jpg
+ create mode 100644 src/assets/img/curved-images/curved8.jpg
+ create mode 100644 src/assets/img/curved-images/curved9.jpg
+ create mode 100644 src/assets/img/curved-images/white-curved.jpeg
+ create mode 100644 src/assets/img/down-arrow-dark.svg
+ create mode 100644 src/assets/img/down-arrow-white.svg
+ create mode 100644 src/assets/img/down-arrow.svg
+ create mode 100644 src/assets/img/enamad.png
+ create mode 100644 src/assets/img/favicon.png
+ create mode 100644 src/assets/img/fb_cover.png
+ create mode 100644 src/assets/img/hiw.png
+ create mode 100644 src/assets/img/home-decor-1.jpg
+ create mode 100644 src/assets/img/home-decor-2.jpg
+ create mode 100644 src/assets/img/home-decor-3.jpg
+ create mode 100644 src/assets/img/illustrations/card-1.png
+ create mode 100644 src/assets/img/illustrations/card-2.png
+ create mode 100644 src/assets/img/illustrations/chat.png
+ create mode 100644 src/assets/img/illustrations/error-404.png
+ create mode 100644 src/assets/img/illustrations/error-500.png
+ create mode 100644 src/assets/img/illustrations/iphone-1.png
+ create mode 100644 src/assets/img/illustrations/iphone-2.png
+ create mode 100644 src/assets/img/illustrations/iphone-3.png
+ create mode 100644 src/assets/img/illustrations/iphone-4.png
+ create mode 100644 src/assets/img/illustrations/lock.png
+ create mode 100644 src/assets/img/illustrations/man-cloud.png
+ create mode 100644 src/assets/img/illustrations/man-rocket.png
+ create mode 100644 src/assets/img/illustrations/rocket-white.png
+ create mode 100644 src/assets/img/illustrations/sign-up.png
+ create mode 100644 src/assets/img/influencer.png
+ create mode 100644 src/assets/img/ivana-square.jpg
+ create mode 100644 src/assets/img/ivana-squares.jpg
+ create mode 100644 src/assets/img/ivana.jpg
+ create mode 100644 src/assets/img/ivancik.jpg
+ create mode 100644 src/assets/img/job-seeker.png
+ create mode 100644 src/assets/img/jordan.jpg
+ create mode 100644 src/assets/img/kal-visuals-square.jpg
+ create mode 100644 src/assets/img/kal-visuals.jpg
+ create mode 100644 src/assets/img/logo-ct.png
+ create mode 100644 src/assets/img/logo.png
+ create mode 100644 src/assets/img/logo_white.svg
+ create mode 100644 src/assets/img/logos/Dark green.png
+ create mode 100644 src/assets/img/logos/Gradient green.png
+ create mode 100644 src/assets/img/logos/Green.png
+ create mode 100644 src/assets/img/logos/app-store-button.svg
+ create mode 100644 src/assets/img/logos/appstore.png
+ create mode 100644 src/assets/img/logos/banner-img.png
+ create mode 100644 src/assets/img/logos/bg.png
+ create mode 100644 src/assets/img/logos/black.png
+ create mode 100644 src/assets/img/logos/google-play-button.svg
+ create mode 100644 src/assets/img/logos/google-play.png
+ create mode 100644 src/assets/img/logos/gray-logos/logo-apple.svg
+ create mode 100644 src/assets/img/logos/gray-logos/logo-behance.svg
+ create mode 100644 src/assets/img/logos/gray-logos/logo-coinbase.svg
+ create mode 100644 src/assets/img/logos/gray-logos/logo-digitalocean.svg
+ create mode 100644 src/assets/img/logos/gray-logos/logo-facebook.svg
+ create mode 100644 src/assets/img/logos/gray-logos/logo-google.svg
+ create mode 100644 src/assets/img/logos/gray-logos/logo-mailchimp.svg
+ create mode 100644 src/assets/img/logos/gray-logos/logo-nasa.svg
+ create mode 100644 src/assets/img/logos/gray-logos/logo-netflix.svg
+ create mode 100644 src/assets/img/logos/gray-logos/logo-pinterest.svg
+ create mode 100644 src/assets/img/logos/gray-logos/logo-spotify.svg
+ create mode 100644 src/assets/img/logos/gray-logos/logo-vodafone.svg
+ create mode 100644 src/assets/img/logos/icon black.png
+ create mode 100644 src/assets/img/logos/icon gradient green.png
+ create mode 100644 src/assets/img/logos/icon green.png
+ create mode 100644 src/assets/img/logos/icon white .png
+ create mode 100644 src/assets/img/logos/icon-dark-green.png
+ create mode 100644 src/assets/img/logos/images/Ellipse 12.png
+ create mode 100644 src/assets/img/logos/images/Mask Group.png
+ create mode 100644 src/assets/img/logos/images/Rectangle 31.png
+ create mode 100644 src/assets/img/logos/images/article.png
+ create mode 100644 src/assets/img/logos/images/banner-img.png
+ create mode 100644 src/assets/img/logos/images/bg.png
+ create mode 100644 src/assets/img/logos/images/blog.png
+ create mode 100644 src/assets/img/logos/images/dreamy-white-girl-using-phone-selfie-with-new-bike-winsome-curly-woman-sunglasses-standing-near-bicycle-removebg-preview 1.png
+ create mode 100644 src/assets/img/logos/images/fb.png
+ create mode 100644 src/assets/img/logos/images/ft.png
+ create mode 100644 src/assets/img/logos/images/google.png
+ create mode 100644 src/assets/img/logos/images/logo.png
+ create mode 100644 src/assets/img/logos/images/talentbg.png
+ create mode 100644 src/assets/img/logos/images/w_logo.png
+ create mode 100644 src/assets/img/logos/mastercard.png
+ create mode 100644 src/assets/img/logos/medium-logos/logo-apple.svg
+ create mode 100644 src/assets/img/logos/medium-logos/logo-behance.svg
+ create mode 100644 src/assets/img/logos/medium-logos/logo-coinbase.svg
+ create mode 100644 src/assets/img/logos/medium-logos/logo-facebook.svg
+ create mode 100644 src/assets/img/logos/medium-logos/logo-google.svg
+ create mode 100644 src/assets/img/logos/medium-logos/logo-mailchimp.svg
+ create mode 100644 src/assets/img/logos/medium-logos/logo-nasa.svg
+ create mode 100644 src/assets/img/logos/medium-logos/logo-netflix.svg
+ create mode 100644 src/assets/img/logos/medium-logos/logo-pinterest.svg
+ create mode 100644 src/assets/img/logos/medium-logos/logo-spotify.svg
+ create mode 100644 src/assets/img/logos/medium-logos/logo-vodafone.svg
+ create mode 100644 src/assets/img/logos/small-logos/logo-apple.svg
+ create mode 100644 src/assets/img/logos/small-logos/logo-asana.svg
+ create mode 100644 src/assets/img/logos/small-logos/logo-atlassian.svg
+ create mode 100644 src/assets/img/logos/small-logos/logo-google-drive.svg
+ create mode 100644 src/assets/img/logos/small-logos/logo-invision.svg
+ create mode 100644 src/assets/img/logos/small-logos/logo-jira.svg
+ create mode 100644 src/assets/img/logos/small-logos/logo-shopify.svg
+ create mode 100644 src/assets/img/logos/small-logos/logo-slack.svg
+ create mode 100644 src/assets/img/logos/small-logos/logo-spotify.svg
+ create mode 100644 src/assets/img/logos/small-logos/logo-weave.svg
+ create mode 100644 src/assets/img/logos/small-logos/logo-webdev.svg
+ create mode 100644 src/assets/img/logos/small-logos/logo-xd.svg
+ create mode 100644 src/assets/img/logos/visa.png
+ create mode 100644 src/assets/img/logos/white-logos/logo-google-white.svg
+ create mode 100644 src/assets/img/logos/white-logos/logo-spotify-white.svg
+ create mode 100644 src/assets/img/logos/white.png
+ create mode 100644 src/assets/img/macbook.png
+ create mode 100644 src/assets/img/marie.jpg
+ create mode 100644 src/assets/img/meeting.jpg
+ create mode 100644 src/assets/img/mimi-thian.jpg
+ create mode 100644 src/assets/img/nastuh.jpg
+ create mode 100644 src/assets/img/office-1.jpg
+ create mode 100644 src/assets/img/office-2.jpg
+ create mode 100644 src/assets/img/office-dark.jpg
+ create mode 100644 src/assets/img/office.jpg
+ create mode 100644 src/assets/img/pattern-points.png
+ create mode 100644 src/assets/img/phones.png
+ create mode 100644 src/assets/img/profile-img.png
+ create mode 100644 src/assets/img/saamaan-kish.png
+ create mode 100644 src/assets/img/screen-man.png
+ create mode 100644 src/assets/img/shapes/pattern-lines.svg
+ create mode 100644 src/assets/img/shapes/shape-1.svg
+ create mode 100644 src/assets/img/shapes/shape-2.svg
+ create mode 100644 src/assets/img/shapes/shape-3.svg
+ create mode 100644 src/assets/img/shapes/waves-gray.svg
+ create mode 100644 src/assets/img/shapes/waves-white.svg
+ create mode 100644 src/assets/img/small-logos/icon-sun-cloud.png
+ create mode 100644 src/assets/img/small-logos/logo-atlassian.svg
+ create mode 100644 src/assets/img/small-logos/logo-invision.svg
+ create mode 100644 src/assets/img/small-logos/logo-jira.svg
+ create mode 100644 src/assets/img/small-logos/logo-slack.svg
+ create mode 100644 src/assets/img/small-logos/logo-spotify.svg
+ create mode 100644 src/assets/img/small-logos/logo-webdev.svg
+ create mode 100644 src/assets/img/small-logos/logo-xd.svg
+ create mode 100644 src/assets/img/talent.svg
+ create mode 100644 src/assets/img/team-1.jpg
+ create mode 100644 src/assets/img/team-2.jpg
+ create mode 100644 src/assets/img/team-3.jpg
+ create mode 100644 src/assets/img/team-4.jpg
+ create mode 100644 src/assets/img/toa-heftiba.jpg
+ create mode 100644 src/assets/img/tv.jpg
+ create mode 100644 src/assets/img/user-placeholder.png
+ create mode 100644 src/assets/img/vezarat.png
+ create mode 100644 src/assets/img/wave-1.svg
+ create mode 100644 src/assets/img/white2.png
+ create mode 100644 src/assets/js/core/bootstrap.min.js
+ create mode 100644 src/assets/js/core/popper.min.js
+ create mode 100644 src/assets/js/plugins/Chart.extension.js
+ create mode 100644 src/assets/js/plugins/bootstrap-notify.js
+ create mode 100644 src/assets/js/plugins/chartjs.min.js
+ create mode 100644 src/assets/js/plugins/choices.min.js
+ create mode 100644 src/assets/js/plugins/fullcalendar.min.js
+ create mode 100644 src/assets/js/plugins/perfect-scrollbar.min.js
+ create mode 100644 src/assets/js/plugins/smooth-scrollbar.min.js
+ create mode 100644 src/assets/js/soft-ui-dashboard.js
+ create mode 100644 src/assets/js/soft-ui-dashboard.js.map
+ create mode 100644 src/assets/js/soft-ui-dashboard.min.js
+ create mode 100644 src/assets/scss/_variables.scss
+ create mode 100644 src/assets/style/css/bootstrap.css
+ create mode 100644 src/assets/style/css/font-awesome.min.css
+ create mode 100644 src/assets/style/css/fonts/Allison-Regular.ttf
+ create mode 100644 src/assets/style/css/fonts/FontAwesome.otf
+ create mode 100644 src/assets/style/css/fonts/fontawesome-webfont.eot
+ create mode 100644 src/assets/style/css/fonts/fontawesome-webfont.svg
+ create mode 100644 src/assets/style/css/fonts/fontawesome-webfont.ttf
+ create mode 100644 src/assets/style/css/fonts/fontawesome-webfont.woff
+ create mode 100644 src/assets/style/css/fonts/fontawesome-webfont.woff2
+ create mode 100644 src/assets/style/css/fonts/glyphicons-halflings-regular.eot
+ create mode 100644 src/assets/style/css/fonts/glyphicons-halflings-regular.svg
+ create mode 100644 src/assets/style/css/fonts/glyphicons-halflings-regular.ttf
+ create mode 100644 src/assets/style/css/fonts/glyphicons-halflings-regular.woff
+ create mode 100644 src/assets/style/css/fonts/glyphicons-halflings-regular.woff2
+ create mode 100644 src/assets/style/css/owl.carousel.min.css
+ create mode 100644 src/assets/style/css/owl.theme.default.min.css
+ create mode 100644 src/assets/style/css/style.css
+ create mode 100644 src/components/UI/DeleteModal.vue
+ create mode 100644 src/components/UI/ThePagination.vue
+ create mode 100644 src/components/crausel/Carousel.vue
+ create mode 100644 src/components/crausel/CarouselSlide.vue
+ create mode 100644 src/components/layouts/ArticleCard.vue
+ create mode 100644 src/components/layouts/CelebrityCard.vue
+ create mode 100644 src/components/layouts/IndexNavbar.vue
+ create mode 100644 src/components/layouts/TheFooter.vue
+ create mode 100644 src/components/layouts/TheNavbar.vue
+ create mode 100644 src/components/layouts/ThePayment.vue
+ create mode 100644 src/main.js
+ create mode 100644 src/routes/adminRouter.js
+ create mode 100644 src/routes/local.js
+ create mode 100644 src/routes/router.js
+ create mode 100644 src/routes/talentRouter.js
+ create mode 100644 src/routes/userRouter.js
+ create mode 100644 src/store/admin/actions.js
+ create mode 100644 src/store/admin/getters.js
+ create mode 100644 src/store/admin/index.js
+ create mode 100644 src/store/admin/mutations.js
+ create mode 100644 src/store/auth/actions.js
+ create mode 100644 src/store/auth/getters.js
+ create mode 100644 src/store/auth/index.js
+ create mode 100644 src/store/auth/mutations.js
+ create mode 100644 src/store/blog/actions.js
+ create mode 100644 src/store/blog/getters.js
+ create mode 100644 src/store/blog/index.js
+ create mode 100644 src/store/blog/mutations.js
+ create mode 100644 src/store/index.js
+ create mode 100644 src/store/site/actions.js
+ create mode 100644 src/store/site/getters.js
+ create mode 100644 src/store/site/index.js
+ create mode 100644 src/store/site/mutations.js
+ create mode 100644 src/store/talent/actions.js
+ create mode 100644 src/store/talent/getters.js
+ create mode 100644 src/store/talent/index.js
+ create mode 100644 src/store/talent/mutations.js
+ create mode 100644 src/store/transaction/actions.js
+ create mode 100644 src/store/transaction/getters.js
+ create mode 100644 src/store/transaction/index.js
+ create mode 100644 src/store/transaction/mutations.js
+ create mode 100644 src/views/NotFound.vue
+ create mode 100644 src/views/admin/AcceptedTalents.vue
+ create mode 100644 src/views/admin/AddTalent.vue
+ create mode 100644 src/views/admin/EditArticle.vue
+ create mode 100644 src/views/admin/NewArticle.vue
+ create mode 100644 src/views/admin/PanelSkeleton.vue
+ create mode 100644 src/views/admin/PendingTalents.vue
+ create mode 100644 src/views/admin/TalentInfo.vue
+ create mode 100644 src/views/admin/TheArticles.vue
+ create mode 100644 src/views/admin/TheCategories.vue
+ create mode 100644 src/views/admin/TheRequests.vue
+ create mode 100644 src/views/admin/TheSettings.vue
+ create mode 100644 src/views/admin/TheTransactions.vue
+ create mode 100644 src/views/admin/TheUsers.vue
+ create mode 100644 src/views/auth/ResetPassword.vue
+ create mode 100644 src/views/auth/ResetPasswordRequest.vue
+ create mode 100644 src/views/auth/TheLogin.vue
+ create mode 100644 src/views/auth/TheSignup.vue
+ create mode 100644 src/views/site/AllCategories.vue
+ create mode 100644 src/views/site/AllTalents.vue
+ create mode 100644 src/views/site/BookMarketingVideo.vue
+ create mode 100644 src/views/site/BookNormalVideo.vue
+ create mode 100644 src/views/site/TalentInfo.vue
+ create mode 100644 src/views/site/TalentsJoin.vue
+ create mode 100644 src/views/site/TheArticle.vue
+ create mode 100644 src/views/site/TheArticles.vue
+ create mode 100644 src/views/site/TheBlog.vue
+ create mode 100644 src/views/site/TheFAQ.vue
+ create mode 100644 src/views/site/TheIndex.vue
+ create mode 100644 src/views/site/ThePolicy.vue
+ create mode 100644 src/views/site/TheTermAndCondition.vue
+ create mode 100644 src/views/site/cete.vue
+ create mode 100644 src/views/site/enrole_dezicare.vue
+ create mode 100644 src/views/talent/CompletedRequests.vue
+ create mode 100644 src/views/talent/MyReviews.vue
+ create mode 100644 src/views/talent/MyVideos.vue
+ create mode 100644 src/views/talent/PanelSkeleton.vue
+ create mode 100644 src/views/talent/PendingRequests.vue
+ create mode 100644 src/views/talent/RejectedRequests.vue
+ create mode 100644 src/views/talent/TheDashboard.vue
+ create mode 100644 src/views/talent/TheProfile.vue
+ create mode 100644 src/views/talent/TheTransactions.vue
+ create mode 100644 src/views/user/CompletedOrders.vue
+ create mode 100644 src/views/user/PanelSkeleton.vue
+ create mode 100644 src/views/user/PendingOrders.vue
+ create mode 100644 src/views/user/TheBookmarks.vue
+ create mode 100644 src/views/user/TheProfile.vue
+ create mode 100644 vue.config.js

@@ -1,0 +1,199 @@
+<template>
+	<div class="card">
+		<div class="card-header bg-gradient-dark ">
+			<h4 class="text-white">Edit {{ name }} </h4>
+		</div>
+		<div class="card-body">
+			<form @submit.prevent="editArticle">
+				<img
+					:src="`https://dzicace.herokuapp.com/${imageURL}`"
+					class="w-100 mb-3"
+					style="height:400px;object-fit:cover"
+				>
+				<div class="form-group mb-3">
+					<label for="">Image:</label>
+					<input
+						type="file"
+						ref="image"
+						class="form-control"
+					>
+				</div>
+				<div class="form-group mb-3">
+					<label for="">Name:</label>
+					<input
+						type="text"
+						placeholder="Name"
+						v-model="name"
+						class="form-control"
+						:class="{'is-invalid':v$.name.$error}"
+					>
+					<span
+						v-if="v$.name.$error"
+						class="text-sm text-danger"
+					>
+						{{ v$.name.$errors[0].$message }}
+					</span>
+				</div>
+				<div class="form-group mb-3">
+					<label for="">SEO title:</label>
+					<input
+						type="text"
+						placeholder="SEO title"
+						v-model="seoTitle"
+						class="form-control"
+					>
+				</div>
+				<div class="form-group mb-3">
+					<label for="">SEO keywords:</label>
+					<Multiselect
+						mode="tags"
+						placeholder="SEO keywords"
+						:create-option="true"
+						:searchable="true"
+						v-model="seoKeywords"
+						class="form-control"
+						:options="seoKeywords"
+					/>
+				</div>
+				<div class="form-group mb-3 ">
+					<label for="">Content:</label>
+					<quill-editor
+						id="rules"
+						v-model:content="content"
+						:content="content"
+						contentType="html"
+						toolbar="full"
+						theme="snow"
+						@ready="editorIsReady($event)"
+					> </quill-editor>
+					<span
+						v-if="v$.content.$error"
+						class="text-sm text-danger"
+					>
+						{{ v$.content.$errors[0].$message }}
+					</span>
+				</div>
+				<div class="text-center mt-4">
+					<button
+						class="btn bg-gradient-main text-white text-lg w-md-50"
+						type="submit"
+					>
+						<i class="fa-regular fa-check-circle me-2"></i>
+						<span> EDIT </span>
+					</button>
+				</div>
+			</form>
+		</div>
+
+		<loading
+			v-model:active="isLoading"
+			:can-cancel="false"
+			:is-full-page="true"
+		/>
+	</div>
+</template>
+
+<script>
+import { QuillEditor } from "@vueup/vue-quill";
+import "@vueup/vue-quill/dist/vue-quill.snow.css";
+import useVuelidate from "@vuelidate/core";
+import { required, helpers } from "@vuelidate/validators";
+export default {
+	props: ["articleId"],
+	components: { QuillEditor },
+	setup: () => ({ v$: useVuelidate() }),
+	validations() {
+		return {
+			name: {
+				required: helpers.withMessage(
+					"Please Enter The Article Name",
+					required
+				),
+			},
+			content: {
+				required: helpers.withMessage(
+					"Please Enter The Content",
+					required
+				),
+			},
+		};
+	},
+	data() {
+		return {
+			isLoading: false,
+			name: "",
+			content: "",
+			imageURL: "",
+			quillObject: {},
+			seoKeywords: [],
+			seoTitle: "",
+		};
+	},
+	methods: {
+		editorIsReady(e) {
+			this.quillObject = e;
+		},
+		async init() {
+			this.isLoading = true;
+			try {
+				await this.$store.dispatch("site/getSingleArticle", {
+					articleId: this.articleId,
+				});
+				const article = this.$store.getters["site/singleArticle"];
+				this.name = article.title;
+				this.imageURL = article.image;
+				this.seoKeywords = article.seo?.keywords;
+				this.seoTitle = article.seo?.title;
+				this.quillObject.pasteHTML(article.content);
+			} catch (err) {
+				console.log(err);
+				this.$swal({
+					icon: "error",
+					text: err.message,
+				});
+			}
+			this.isLoading = false;
+		},
+		async editArticle() {
+			const result = await this.v$.$validate();
+			if (!result) return;
+
+			this.isLoading = true;
+			try {
+				const formData = new FormData();
+				formData.append("title", this.name);
+				if (this.$refs.image?.files[0])
+					formData.append("image", this.$refs.image?.files[0]);
+				formData.append("content", this.content);
+				formData.append("seoTitle", this.seoTitle);
+				formData.append("seoKeywords", this.seoKeywords);
+
+				await this.$store.dispatch("admin/editArticle", {
+					data: formData,
+					articleId: this.articleId,
+				});
+
+				this.$swal({
+					icon: "success",
+					text: "The article was edited successfully!",
+				});
+			} catch (err) {
+				this.$swal({
+					icon: "error",
+					text: err.message,
+				});
+			}
+			this.isLoading = false;
+		},
+	},
+	created() {
+		this.init();
+	},
+};
+</script>
+
+<style lang="scss" scoped>
+.content {
+	height: 300px !important;
+}
+</style>
